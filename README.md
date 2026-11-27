@@ -2,7 +2,15 @@
 
 TANIT SECURITY S.A.R.L – Sécurité • Vidéosurveillance • Réseaux
 
-Ce dépôt héberge :
+## État actuel du dépôt
+
+Le dossier `public/` contient uniquement une page d’état provisoire pour permettre le déploiement sur Netlify. L’application web, les téléchargements et l’API de synchronisation ne sont pas disponibles dans cette version.
+
+Pour publier l’application complète, restaurez le dossier `public/` d’origine (en remplaçant `public/index.html`) et le dossier `netlify/functions/` d’origine, notamment `netlify/functions/api.mjs`. Vérifiez ensuite le déploiement avant de suivre les instructions de connexion ci-dessous.
+
+## Application complète
+
+Une fois les fichiers d’origine restaurés, ce dépôt héberge :
 - **l'application web** (même interface que l'APK) : `public/` ;
 - **l'API de synchronisation** : `netlify/functions/api.mjs` ;
 - **la base de données en ligne** : Netlify Blobs (gratuit, aucun serveur à gérer).
