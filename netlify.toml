@@ -1,0 +1,19 @@
+# TANIT-GESS – configuration Netlify
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+  command = "echo 'TANIT-GESS : rien à compiler'"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+
+[[headers]]
+  for = "/telechargements/*.apk"
+  [headers.values]
+    Content-Type = "application/vnd.android.package-archive"

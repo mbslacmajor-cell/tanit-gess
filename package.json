@@ -1,0 +1,10 @@
+{
+  "name": "tanit-gess-serveur",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TANIT-GESS – serveur et application web de TANIT SECURITY (Netlify Functions + Netlify Blobs)",
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.12"
+  }
+}
